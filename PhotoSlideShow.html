@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <div id="slideshow">
+        <img id="photo" src="./PhotosTest/" alt="Photo Preview">
+    </div>
+
+    <script>
+        const photos = [
+            'pic1.jpg',
+            'pic2.jpg',
+            'pic3.jpg',
+            'pic4.jpg',
+            'pic5.jpg'
+        ];
+
+        let currentIndex = 0;
+
+        function changePhoto() {
+            document.getElementById('photo').src = photos[currentIndex];
+            currentIndex = (currentIndex + 1) % photos.length;
+            setTimeout(changePhoto, 5000); // Change photo every 5 seconds
+        }
+
+        // Initial load
+        changePhoto();
+    </script>
+
+</body>
+
+</html>
