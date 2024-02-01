@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grade Tracker</title>
+  <!-- JSPDF CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 50%;
+      margin: 50px auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    #average {
+      margin-top: 20px;
+    }
+
+    #button {
+      background-color: #4caf50;
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <label for="math">Math:</label>
+    <input type="number" id="math" name="math" min="1" max="10" onchange="calculateAverage()" required>
+
+    <label for="biology">Biology:</label>
+    <input type="number" id="biology" name="biology" min="1" max="10" onchange="calculateAverage()" required>
+
+    <label for="physics">Physics:</label>
+    <input type="number" id="physics" name="physics" min="1" max="10" onchange="calculateAverage()" required>
+
+    <label for="informatics">Informatics:</label>
+    <input type="number" id="informatics" name="informatics" min="1" max="10" onchange="calculateAverage()" required>
+
+    <div id="average">
+      <label for="avg">Average Mark:</label>
+      <input type="text" id="avg" name="avg" readonly>
+    </div>
+
+    <button id="button" onclick="generatePDF()">Generate PDF</button>
+  </div>
+
+  <script>
+    function calculateAverage() {
+      let values = [
+        parseFloat(document.getElementById("math").value) || 0,
+        parseFloat(document.getElementById("biology").value) || 0,
+        parseFloat(document.getElementById("physics").value) || 0,
+        parseFloat(document.getElementById("informatics").value) || 0,
+      ];
+
+      // Filter out zero values
+      let filteredValues = values.filter(value => value !== 0);
+
+      // Calculate average
+      let average = filteredValues.length > 0 ? filteredValues.reduce((sum, value) => sum + value, 0) / filteredValues.length : 0;
+
+      document.getElementById("avg").value = average.toFixed(2);
+    }
+
+    function generatePDF() {
+      let doc = new jsPDF();
+      let math = document.getElementById("math").value;
+      let biology = document.getElementById("biology").value;
+      let physics = document.getElementById("physics").value;
+      let informatics = document.getElementById("informatics").value;
+
+      // Calculate average
+      let values = [parseFloat(math), parseFloat(biology), parseFloat(physics), parseFloat(informatics)];
+      let filteredValues = values.filter(value => value !== 0);
+      let average = filteredValues.length > 0 ? filteredValues.reduce((sum, value) => sum + value, 0) / filteredValues.length : 0;
+
+      // Add content to PDF
+      doc.text("Course Marks", 20, 10);
+      doc.text(`Math: ${math}`, 20, 20);
+      doc.text(`Biology: ${biology}`, 20, 30);
+      doc.text(`Physics: ${physics}`, 20, 40);
+      doc.text(`Informatics: ${informatics}`, 20, 50);
+      doc.text(`Average: ${average.toFixed(2)}`, 20, 60);
+
+      // Get data URL of the PDF
+      let dataURL = doc.output('dataurl');
+
+      // Open PDF in a new browser tab
+      window.open(dataURL, '_blank');
+    }
+  </script>
+</body>
+
+</html>
