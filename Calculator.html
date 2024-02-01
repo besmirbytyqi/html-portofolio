@@ -93,7 +93,7 @@
       let average = filteredValues.length > 0 ? filteredValues.reduce((sum, value) => sum + value, 0) / filteredValues.length : 0;
 
       // Add content to PDF
-      doc.text("Ditari Elektronik", 20, 10);
+      doc.text("Ditari Elektronik", 40, 20);
       doc.text(`Matematik: ${math}`, 20, 20);
       doc.text(`Biologji: ${biology}`, 20, 30);
       doc.text(`Fizik: ${physics}`, 20, 40);
