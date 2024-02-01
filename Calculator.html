@@ -43,23 +43,23 @@
 <body>
   <div class="container">
     <label for="math">Matematik:</label>
-    <input type="number" id="math" name="math" min="1" max="10" onchange="calculateAverage()" required>
+    <input type="number" id="math" name="math" min="1" max="5" onchange="calculateAverage()" required>
 
     <label for="biology">Biologji:</label>
-    <input type="number" id="biology" name="biology" min="1" max="10" onchange="calculateAverage()" required>
+    <input type="number" id="biology" name="biology" min="1" max="5" onchange="calculateAverage()" required>
 
     <label for="physics">Fizik:</label>
-    <input type="number" id="physics" name="physics" min="1" max="10" onchange="calculateAverage()" required>
+    <input type="number" id="physics" name="physics" min="1" max="5" onchange="calculateAverage()" required>
 
     <label for="informatics">Informatik:</label>
-    <input type="number" id="informatics" name="informatics" min="1" max="10" onchange="calculateAverage()" required>
+    <input type="number" id="informatics" name="informatics" min="1" max="5" onchange="calculateAverage()" required>
 
     <div id="average">
       <label for="avg">Nota Mesatare:</label>
       <input type="text" id="avg" name="avg" readonly>
     </div>
 
-    <button id="button" onclick="generatePDF()">Generate PDF</button>
+    <button id="button" onclick="generatePDF()">Printo në PDF</button>
   </div>
 
   <script>
