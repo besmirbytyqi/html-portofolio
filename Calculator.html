@@ -100,11 +100,8 @@
       doc.text(`Informatics: ${informatics}`, 20, 50);
       doc.text(`Average: ${average.toFixed(2)}`, 20, 60);
 
-      // Get data URL of the PDF
-      let dataURL = doc.output('dataurl');
-
-      // Open PDF in a new browser tab
-      window.open(dataURL, '_blank');
+      // Save PDF
+      doc.save("grades.pdf");
     }
   </script>
 </body>
