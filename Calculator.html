@@ -93,15 +93,15 @@
       let average = filteredValues.length > 0 ? filteredValues.reduce((sum, value) => sum + value, 0) / filteredValues.length : 0;
 
       // Add content to PDF
-      doc.text("Course Marks", 20, 10);
-      doc.text(`Math: ${math}`, 20, 20);
-      doc.text(`Biology: ${biology}`, 20, 30);
-      doc.text(`Physics: ${physics}`, 20, 40);
-      doc.text(`Informatics: ${informatics}`, 20, 50);
-      doc.text(`Average: ${average.toFixed(2)}`, 20, 60);
+      doc.text("Ditari Elektronik", 20, 10);
+      doc.text(`Matematik: ${math}`, 20, 20);
+      doc.text(`Biologji: ${biology}`, 20, 30);
+      doc.text(`Fizik: ${physics}`, 20, 40);
+      doc.text(`Informatik: ${informatics}`, 20, 50);
+      doc.text(`Nota Mesatare: ${average.toFixed(2)}`, 20, 60);
 
       // Save PDF
-      doc.save("grades.pdf");
+      doc.save("Dëftesa.pdf");
     }
   </script>
 </body>
