@@ -361,7 +361,9 @@ ul {
         justify-content: space-between;
     }
 
-    
+    .hero h1{
+        font-size: 28px;
+    }
 
     .expertise{
         flex-direction: column-reverse;
@@ -466,7 +468,11 @@ ul {
         border: none;
         justify-content: space-between;
     }
-    
+
+    .hero h1{
+        font-size: 28px;
+    }
+
     .expertise{
         flex-direction: column-reverse;
     }
