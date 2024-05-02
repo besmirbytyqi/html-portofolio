@@ -311,12 +311,14 @@ ul {
     display: flex;
     flex-direction: column;
     margin-top: -10px;
+    margin: auto auto auto auto;
 }
 
 .icons {
     display: flex;
     margin-right: 120px;
     gap: 38px;
+    margin: auto auto auto auto;
 }
 
 
@@ -346,6 +348,7 @@ ul {
         flex-direction: column;
         gap: 25px; 
         font-size: 20px;
+        text-align: center;
     }
     
   
@@ -377,16 +380,8 @@ ul {
     }
 
     .site-footer{
-        display: flex;
         flex-direction: column;
-        margin: auto auto auto auto;
-    }
-    
-    .besmir {
-        display: flex;
-        flex-direction: column;
-        margin: auto auto auto auto;
-        
+        justify-content: center;
     }
     
     .besmir > .logo {
@@ -394,6 +389,8 @@ ul {
     }
     
     .contacts{
+        display: flex;
+        flex-direction: column;
         font-size: 16px;
         text-align: center;
         margin: auto auto auto auto;
@@ -403,28 +400,25 @@ ul {
     .nav__list ul {
         display: flex;
         flex-direction: column;
-        gap: 25px; 
-        font-weight: 600;
-        font-size: 20px;
-        margin: auto auto auto auto;
+        gap: 10px; 
+        font-size: 16px;
         align-items: center;
-        
     }
-    .nav__list.legal {
-        margin-top: 50px;
-    }
+
+  
     
     .social-media {
-        margin-top: 50px;
+        margin: 30px auto auto auto;  
         align-items: center;
     }
     
-    .icons {
-        display: flex;
-        
-        
-        align-items: center;
+    .icons{
+        gap: 20px;
     }
+    .social-media > .heading--3 {
+        font-size: 20px;
+    }
+ 
   }
 
 @media (min-width: 375px) and (max-width: 932px) {
@@ -452,6 +446,7 @@ ul {
         flex-direction: column;
         gap: 25px; 
         font-size: 20px;
+        text-align: center;
     }
 
     .thumbnail img{
@@ -477,6 +472,46 @@ ul {
     
     .expertise__thumbnail{
         width: 60%;  
+    }
+
+    .site-footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .besmir > .logo {
+        margin-top: -10px;
+    }
+    
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        text-align: center;
+        margin: auto auto auto auto;
+    }
+    
+    
+    .nav__list ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        font-size: 16px;
+        align-items: center;
+    }
+
+  
+    
+    .social-media {
+        margin: 30px auto auto auto;  
+        align-items: center;
+    }
+    
+    .icons{
+        gap: 20px;
+    }
+    .social-media > .heading--3 {
+        font-size: 20px;
     }
 
 
