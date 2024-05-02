@@ -375,6 +375,56 @@ ul {
     .expertise__thumbnail{
         width: 60%;  
     }
+
+    .site-footer{
+        display: flex;
+        flex-direction: column;
+        margin: auto auto auto auto;
+    }
+    
+    .besmir {
+        display: flex;
+        flex-direction: column;
+        margin: auto auto auto auto;
+        
+    }
+    
+    .besmir > .logo {
+        margin-top: -10px;
+    }
+    
+    .contacts{
+        font-size: 16px;
+        text-align: center;
+        margin: auto auto auto auto;
+    }
+    
+    
+    .nav__list ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px; 
+        font-weight: 600;
+        font-size: 20px;
+        margin: auto auto auto auto;
+        align-items: center;
+        
+    }
+    .nav__list.legal {
+        margin-top: 50px;
+    }
+    
+    .social-media {
+        margin-top: 50px;
+        align-items: center;
+    }
+    
+    .icons {
+        display: flex;
+        
+        
+        align-items: center;
+    }
   }
 
 @media (min-width: 375px) and (max-width: 932px) {
