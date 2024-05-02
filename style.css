@@ -279,11 +279,6 @@ ul {
     
 }
 
-.besmir > .logo {
-    
-    
-}
-
 .contacts{
     color: #FFFFFF;
     font-family: Roboto;
@@ -355,15 +350,18 @@ ul {
     }
     
   
-
     .thumbnail img{
         width: 100%;
     }
 
     .hero {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;   
+        border: none;
+        justify-content: space-between;
     }
+
+    
 
     .expertise{
         flex-direction: column-reverse;
@@ -464,8 +462,11 @@ ul {
 
     .hero {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;   
+        border: none;
+        justify-content: space-between;
     }
+    
     .expertise{
         flex-direction: column-reverse;
     }
@@ -528,6 +529,4 @@ ul {
     .social-media > .heading--3 {
         font-size: 20px;
     }
-
-
   }
