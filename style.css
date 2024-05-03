@@ -140,23 +140,23 @@ ul {
     display: flex;
     max-width: 1680px;
     margin: 110px 120px 0 120px;
-    
     justify-content: center;
     align-items: center;
-    padding: 0 60px 0 60px;
     color: #1F565C;
 }
 
 .whyus__item__title {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 900px;
-    background-color: yellow;
+    max-width: 600px;
+    width: 100%;
+    max-height: 900px;
+    height: 100%;
     align-items: center;
-    
     border-radius: 20px;
     background: #E4F6F8;
+    padding-bottom: 20px;
+    
 }
 
 .whyus__item__title h1{
@@ -170,7 +170,7 @@ ul {
 }
 
 .button__appointments {
-    margin-top: 220px;
+    margin-top: 200px;
     width: 291px;
     height: 70px;
     border-radius: 50px;
@@ -186,7 +186,7 @@ ul {
 .whyus__item {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
     max-height: 700px; 
     padding: 80px 27px 80px 27px; 
     justify-content: center;
@@ -402,10 +402,74 @@ ul {
     
     .expertise__thumbnail img {
         width: 100%;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 20px 20px 20px 20px;
         object-fit: cover;
     }
 
+    /**WhyUS*/
+    .whyus{
+        flex-direction: column;
+        max-width: 1680px;
+        margin: 110px 20px 0 20px;
+    }
+    
+    .whyus__item__title {
+        border-radius: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .whyus__item__title h1{
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 40px;
+        max-width: 141px;
+        margin-top: 20px;
+    }
+    
+    .button__appointments {
+        margin-top: 20px;
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 8px 10px;
+        margin-bottom: 20px;
+    }
+    
+    .whyus__item {
+        padding: 20px 27px 20px 27px; 
+        gap: 10px;
+        text-align: justify;
+    }
+    
+    .whyus__item .heading--3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .whyus_left{
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .whyus_right{
+        border-radius: 0px 0px 20px 20px;
+    }
+
+        /**section__5**/
+        .hero-slider {
+            display: flex;
+            margin-top: 106px;
+            margin-bottom: 35px;
+            justify-content: center;
+            padding: 20px 20px 20px 20px;
+        
+        }
+    
+        .hero-slider img {
+            max-width: 1680px;
+            width: 100%;
+            border-radius: 10px 10px 10px 10px;
+            object-fit: cover;
+        }
     /** section 6 **/
         .section__6{
         padding: 20px 40px 20px 40px;
@@ -551,6 +615,55 @@ ul {
         object-fit: cover;
     }
 
+
+   /*------- Why Us -------*/
+.whyus{
+    flex-direction: column;
+    max-width: 1680px;
+    margin: 110px 20px 0 20px;
+}
+
+.whyus__item__title {
+    border-radius: 0px;
+    padding-bottom: 20px;
+}
+
+.whyus__item__title h1{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    max-width: 141px;
+    margin-top: 20px;
+}
+
+.button__appointments {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+
+.whyus__item {
+    padding: 20px 27px 20px 27px; 
+    gap: 10px;
+    text-align: justify;
+}
+
+.whyus__item .heading--3 {
+    font-size: 25px;
+    text-align: center;
+}
+.whyus_left{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.whyus_right{
+    border-radius: 0px 0px 20px 20px;
+}
+
     /**section__5**/
     .hero-slider {
         display: flex;
@@ -584,10 +697,13 @@ ul {
     .item1, .item2, .item3{
         padding: 20px 20px 20px 20px;
         text-align: justify;
+        font-size: 16px;
+        
     }
 
     .item1 .heading--4, .item2 .heading--4, .item3 .heading--4{ 
         text-align: center;
+        font-size: 24px; 
     }
 
 /** Footer **/
