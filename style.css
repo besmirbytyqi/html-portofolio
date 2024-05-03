@@ -112,10 +112,11 @@ ul {
     color: #1F565C;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding: 20px 25px 20px 25px;
+    padding: 20px 40px 20px 70px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;    
+    flex-grow: 1;   
+    text-align: justify; 
 }
 
 .expertise__content p{
@@ -240,7 +241,7 @@ ul {
     background: #00A1BE80;
     border-radius: 20px;
     font-size: 20px;
-
+    
 }
 
 .item2 {
@@ -374,6 +375,7 @@ ul {
     .expertise__content{
         width: 45%;
         border-radius: 0px 0px 20px 20px;
+        
     }
     
     .expertise__content p{
@@ -478,20 +480,41 @@ ul {
     }
 
     .expertise{
+        display: flex;
         flex-direction: column-reverse;
+        max-width: 1680px;
+        display: flex;
+        margin: 100px 40px 0px 40px;
     }
     
     .expertise__content{
-        width: 45%;
+        width: 82%;
         border-radius: 0px 0px 20px 20px;
+        padding: 0px 25px 0 25px;
+        display: flex;
+        flex-direction: column;  
+        text-align: justify;
     }
     
     .expertise__content p{
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 400; 
+    }
+
+    .expertise__content .heading--2{ 
+        font-size: 24px; 
+        text-align: center;
+    }
+
+    .expertise__thumbnail{
+        display: flex;
+        width: 100%;   
     }
     
-    .expertise__thumbnail{
-        width: 60%;  
+    .expertise__thumbnail img {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
     }
 
     .site-footer{
