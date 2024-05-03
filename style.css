@@ -369,23 +369,57 @@ ul {
     }
 
     .expertise{
+        display: flex;
         flex-direction: column-reverse;
+        max-width: 1680px;
+        display: flex;
+        margin: 100px 20px 0px 20px;
     }
     
     .expertise__content{
-        width: 45%;
+        width: 85%;
         border-radius: 0px 0px 20px 20px;
-        
+        padding: 0px 25px 0 25px;
+        display: flex;
+        flex-direction: column;  
+        text-align: justify;
     }
     
     .expertise__content p{
-        font-size: 18px;
-    }
-    
-    .expertise__thumbnail{
-        width: 60%;  
+        font-size: 16px;
+        font-weight: 400; 
     }
 
+    .expertise__content .heading--2{ 
+        font-size: 24px; 
+        text-align: center;
+    }
+
+    .expertise__thumbnail{
+        display: flex;
+        width: 100%;   
+    }
+    
+    .expertise__thumbnail img {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    /** section 6 **/
+        .section__6{
+        padding: 20px 40px 20px 40px;
+    }
+
+    .item1, .item2, .item3{
+        padding: 20px 20px 20px 20px;
+        text-align: justify;
+    }
+
+    .item1 .heading--4, .item2 .heading--4, .item3 .heading--4{ 
+        text-align: center;
+    }
+/** Footer **/
     .site-footer{
         flex-direction: column;
         justify-content: center;
@@ -516,7 +550,21 @@ ul {
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
+/** section 6 **/
+.section__6{
+    padding: 20px 40px 20px 40px;
+}
 
+.item1, .item2, .item3{
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+}
+
+.item1 .heading--4, .item2 .heading--4, .item3 .heading--4{ 
+    text-align: center;
+}
+
+/** Footer **/
     .site-footer{
         flex-direction: column;
         justify-content: center;
@@ -541,15 +589,12 @@ ul {
         margin: auto auto auto ;
     }
     
-    
     .navigation__list, .legal__list {
         display: flex;
         flex-direction: column;
         font-size: 16px;
         align-items: center;
     }
-
-  
     
     .social-media {
         margin: 30px auto auto auto;  
