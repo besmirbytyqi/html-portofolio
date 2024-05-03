@@ -323,9 +323,6 @@ ul {
 
 /**Media Query**/
 @media (min-width: 933px) and (max-width: 1280px) {
-    body {
-      background-color: yellow;
-    }
 
     .site-header{
         display: flex;
@@ -533,10 +530,7 @@ ul {
   }
 
 @media (min-width: 375px) and (max-width: 932px) {
-    body {
-      background-color: lightsalmon;
-    }
-
+    
     .site-header{
         display: flex;
         flex-direction: column;
