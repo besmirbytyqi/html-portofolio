@@ -370,7 +370,7 @@ ul {
         flex-direction: column-reverse;
         max-width: 1680px;
         display: flex;
-        margin: 100px 20px 0px 20px;
+        margin: 40px 20px 0px 20px;
     }
     
     .expertise__content{
@@ -576,7 +576,7 @@ ul {
         flex-direction: column-reverse;
         max-width: 1680px;
         display: flex;
-        margin: 100px 20px 0px 20px;
+        margin: 40px 20px 0px 20px;
     }
     
     .expertise__content{
